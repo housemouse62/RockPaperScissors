@@ -13,4 +13,7 @@ This is the Rock Paper Scissors Assignment for The Odin Project. I will use this
 4. The code compares the two
     if computer === r && human === p || computer === p && human === s || computer === s && human === r : human score +1 ? computer score +1 (???????)
     if computer = paper and human = scissors, 
-5. Outputs who is the winner 
+5. Outputs who is the winner
+
+6/8/2025
+This was difficult. I was stuck many times. I took breaks and things clicked around in my head and gave me ideas. I could not for the life of me figure out how to keep the prompt to keep prompting. I finally gave in and looked at other people's codes. I found a simple solution that worked for me. I feel okay about it, ha. This is quite the journey. I look forward to coming back to this in months and understanding it more. Party on.
