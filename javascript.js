@@ -21,15 +21,19 @@ function getHumanChoice() {
 
 let HumanScore = 0
 let ComputerScore = 0
-
+console.log("Human: " + HumanScore)
+console.log("Computer: " + ComputerScore)
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock" && computerChoice === "scissors") {
-        alert("Human!")
+        console.log("You win! Rock SMASHES Scissors!");
+        HumanScore++;
     } else if (humanChoice = "scissors") {
         alert("it's working") 
         } else {
             alert("it's working")
         }
+        console.log("Human: " + HumanScore);
+        console.log("Computer: " + ComputerScore);
     }
 
 
