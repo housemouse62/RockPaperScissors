@@ -1,49 +1,35 @@
-
-function getComputerChoice() {
-    let CompChoice = Math.floor((Math.random() * 100));
-    if (CompChoice < 33) {
+ function getComputerChoice() {
+    let ComputerResponse = Math.floor((Math.random() * 100));
+    console.log(ComputerResponse);
+    if (ComputerResponse < 33) {
         CChoice = "rock";
-    } else if (CompChoice > 66) {
+    } else if (ComputerResponse > 66) {
         CChoice = "paper";
     } else {
-    CChoice = "scissors";
+    CChoice = "scissors";}
+    console.log(CChoice);
+    return CChoice;
     }
-    console.log(CChoice)
-}
+    
 
 function getHumanChoice() {
-    let HChoice = prompt("1 for Rock, 2 for Paper or 3 for Scissors?");
-    console.log(HChoice);
-    if (HChoice == "1") {
-        console.log("rock");
-    } else if (HChoice == "2") {
-        console.log("paper");
-    } else if (HChoice == "3") {
-        console.log("scissors");
-    }
-    console.log(HChoice);
+    let HumanResponseU = prompt("Rock, Paper or Scissors?");
+    let HumanResponse = HumanResponseU.toLowerCase();
+    console.log(HumanResponse);
+    return HumanResponse.toLowercase;
 }
 
+let HumanScore = 0
+let ComputerScore = 0
 
+function playRound(humanChoice, computerChoice) {
 
-let HScore = 0; 
-let CScore = 0;
-
-console.log(HScore);
-console.log(CScore);
-
-if (HChoice === 1 && CChoice = "scissors") {
-    (humanScore = HScore + 1);
-} else if (HChoice = "2" && CChoice = "rock") {
-    (humanScore = HScore + 1);
-} else if (HChoice = "3" && CChoice = "paper") {
-    (humanScore = HScore + 1);
-}   else {
-    (computerScore = CScore + 1);
+console.log(humanChoice)
 }
-    console.log("Human: " + humanScore);
-    console.log("Computer: " + computerScore);
 
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 
-getHumanChoice()
-getComputerChoice()
+playRound(humanSelection, computerSelection);
+console.log(computerSelection);
+console.log(humanSelection);
