@@ -16,16 +16,22 @@ function getHumanChoice() {
     let HumanResponseU = prompt("Rock, Paper or Scissors?");
     let HumanResponse = HumanResponseU.toLowerCase();
     console.log(HumanResponse);
-    return HumanResponse.toLowercase;
+    return HumanResponse;
 }
 
 let HumanScore = 0
 let ComputerScore = 0
 
 function playRound(humanChoice, computerChoice) {
+    if (humanChoice === "rock" && computerChoice === "scissors") {
+        alert("Human!")
+    } else if (humanChoice = "scissors") {
+        alert("it's working") 
+        } else {
+            alert("it's working")
+        }
+    }
 
-console.log(humanChoice)
-}
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
