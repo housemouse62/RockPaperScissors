@@ -49,9 +49,6 @@ function playGame() {
         console.log("Human: " + HumanScore);
         console.log("Computer: " + ComputerScore);
     };
-    for (i = 1; i < 6; i++) {
-    playRound(getHumanChoice(), getComputerChoice(), i);
-    };
 
     if (HumanScore > ComputerScore) {
         console.log("YOU WIN!")
